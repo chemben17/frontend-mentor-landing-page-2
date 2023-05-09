@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Poppins:wght@600&display=swap");
+/* font-family: "Poppins", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* Universal element selector to have a general selector for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* The contents container main  to set the max width of the contents */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* min-width: 800px; */
+  /* background: whitesmoke; */
+}
+
+/* The header container also contains the background logo */
+header {
+  background-color: hsla(192, 100%, 96%, 0.56);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./images/bg-hero-desktop.svg);
+}
+
+header > .header-container{
+  width: 88%;
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem 0;
+}
+/* The nav bar design of the container and link using flex and space-between */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+nav > div > a {
+  text-decoration: none;
+  font-size: x-small;
+  color: black;
+}
+nav > div > a:hover, nav > div> a:focus {
+  color:hsl(208, 11%, 55%);
+}
+nav > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 1px 1px 3px;
+  border-radius: 20px;
+  padding: 5px;
+  height: 30px;
+  width: 20%;
+}
+/* The  huddle logo gesign */
+nav > div > img {
+  display: block;
+  max-width: 45%;
+  height: auto;
+}
+
+/* The h1 and img container setting and design */
+div.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.header > .h-1 {
+  flex: 1;
+}
+/* The h1 design */
+.h-1 > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: hsl(192, 100%, 9%);
+  width: 70%;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.h-1 > p {
+  width: 82%;
+  line-height: 1.5;
+  color: hsl(208, 11%, 55%);
+  font-size: 0.9rem;
+  margin: 1.2rem 0;
+}
+
+/* The Mock logo set using flex */
+div.header > .mock-up-img {
+  display: flex;
+  align-items: center;
+}
+div.header > div > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+div.header > div:last-child {
+  flex: 1;
+}
+
+.header > div > div, div.join > div  {
+  background: hsl(322, 100%, 66%);
+  min-width: 150px;
+  width: 30%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.header > div > div > a {
+  text-decoration: none;
+  font-size: x-small;
+  color: #fff;
+  display: block;
+}
+
+/* I have something to address on the responsivesmess of the links */
+.header > div > div > a:hover {
+  color:#ffffff85;
+}
+
+/* The body design using flex and changing the directio to column */
+.grp-section {
+  width: 88%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* max-height: 1995px; */
+}
+
+.grp-section > section {
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 5px 2px whitesmoke;
+  -moz-box-shadow: 0 0 5px 2px whitesmoke;
+  box-shadow: 0 0 5px 2px whitesmoke;
+  background-color: white;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem 2rem 4rem;
+}
+
+/* The images illustrations setting to make the siz eof the image responsive */
+.grp-section > section > div > img {
+  display: block;
+  max-width: 100%;
+}
+
+/* The general h-2 design  */
+.grp-section > section > div > h2, .join > h2 {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0.8rem 0;
+}
+
+/* The general paragraph design */
+.grp-section > section > div > p {
+  color: hsl(208, 11%, 55%);
+  font-size: 0.85rem;
+  width: 75%;
+}
+
+/* The specify the gap for the seconf section with reverse formst of the illustrations and  the width for the p to 100%*/
+.grp-section > section.sec-2 {
+  gap: 5rem;
+}
+
+.sec-2 > div > .reverse {
+  width: 100%;
+}
+
+div.join {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 5px 2px whitesmoke;
+  -moz-box-shadow: 0 0 5px 2px whitesmoke;
+  box-shadow: 0 0 5px 2px whitesmoke;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  top: 3rem;
+  /* padding-top: 10rem; */
+}
+
+div.join > div {
+  min-width: 250px;
+  height: 2.7rem;
+  border-radius: 2rem;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.441);
+}
+
+div.join > div > a {
+  display: block;
+  text-decoration: none;
+  font-size: small;
+  color: whitesmoke;
+  font-weight: 700;
+}
+div.join > div > a:hover {
+  color: rgba(245, 245, 245, 0.686)
+}
+
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: hsla(192, 100%, 9%, 0.92);
+  /* height: 50px; */
+}
+footer > .footer-container-1 {
+  width: 88%;
+  margin: 0 auto;
+  padding: 4rem 0 2rem 1rem;
+}
+
+.footer-container-1 > img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 3rem 0 1rem 0;
+  /* background-color: #fff; */
+}
+
+div.footer-container-2 {
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: flex-start; */
+}
+
+div.footer-container-2 > div, address {
+  flex: 1;
+}
+
+address.primary-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 7rem */
+  /* flex-basis: 100%; */
+  /* width: 70%; */
+  margin: 1rem 3rem 1.5rem 0
+}
+
+
+/* The primary address container */
+address.primary-address > div {
+  display: flex;
+  gap: 20px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* margin left adjestment on the footer flex items */
+.details-1 {
+  margin-left: 3rem;
+}
+.details-2 {
+  margin-left: 1rem;
+}
+
+
+/* The address design, font and color */
+address.primary-address > div > div:nth-child(2), address.primary-address > div > div:nth-child(2) > a {
+  font-size: small;
+  margin-top: 5px;
+  text-decoration: none;
+  color: hsla(192, 100%, 96%, 0.7)
+}
+/* The location, phone and email icon design*/
+address.primary-address > div > div > img {
+  display: block;
+  height: 13px;
+  width: 15px;
+  margin-top: 7px;
+}
+
+.footer-container-2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  /* margin: 0 0 0 4rem; */
+}
+
+
+/* adjust thickness of the font used */
+.footer-container-2 > div > div > a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  gap: 30px;
+  color: hsl(193, 100%, 96%);
+  font-weight: 400 !important;
+}
+
+.footer-container-2 > div > div > a:hover, .footer-container-2 > div > div > a:focus, address.primary-address > div > div:nth-child(2) > a:hover {
+  text-decoration: underline;
+}
+
+address.social-handle {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  gap: 10px;
+  margin: 5px 0 0 4rem; 
+
+}
+
+address.social-handle > div > a > img {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border: 0.5px solid hsl(193, 100%, 96%);
+  border-radius: 50%;
+}
+
+/* Copyright design */
+div.copyright {
+  display: flex;
+  justify-content: flex-end;
+}
+div.copyright > p {
+  font-size: 0.6rem;
+  color:hsla(192, 100%, 96%, 0.786);
+  margin-right: 1rem;
+  /* add font-family of 400 */
+}
